@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>MAKAUT ALUMNI ASSOCIATION</title>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/css/mdb.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+	
+      <script type = "text/javascript"
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+      </script>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" 
+        crossorigin="anonymous">
+</script>
+
+</head>
+
+<style type="text/css">
+	html,
+    body,
+    .view {
+      height: 100%;
+
+    }
+    body {
+
+    }
+    
+    /* Carousel*/
+    .carousel,
+    .carousel-item,
+    .carousel-item.active {
+      height: 100%;
+    }
+    .carousel-inner {
+      height: 100%;
+    }
+    .carousel-item:nth-child(1) {
+      background-image: url("wbut.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    .carousel-item:nth-child(2) {
+      background-image: url("wbut.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    .carousel-item:nth-child(3) {
+      background-image: url("wbut.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+	.carousel{
+		position: relative;
+	}
+	.wave {
+		position: absolute;
+		bottom: 0;
+    	z-index: 2;
+	}
+
+	
+	.blob {
+		position: relative;
+		margin: 0px;
+	}
+	.content {
+		background: #a2d9ff3b;
+		position: relative;
+	}
+	/*@media(max-width: 786px){
+		.story {
+			transform: translate(0px,100px);
+		}
+
+	}*/
+	.collapsible-body p{
+			color:#a0522d;
+			font-weight:bold;
+			font-size:25px;
+		}
+			.collapsible-body strong{
+			color:#009999;
+			font-weight:bold;
+			font-size:25px;
+		}
+
+	@media (max-width: 740px){
+		.mem-text {
+			font-size: 40px;
+		}
+		.crown {
+			width: 40px;
+		}
+	}
+
+
+
+a {
+  color: inherit;
+  text-decoration: none
+}
+
+a.link {
+  color: #C4290D
+}
+
+
+
+
+.demo-wrapper {
+  padding: 30px
+}
+
+/*h1 {
+  font-size: 42px;
+  margin: 0;
+  font-weight: 300;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+  text-align: center
+}*/
+
+.portfolio-items {
+  height: 400px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin-bottom: 30px;
+  position: relative
+}
+
+.portfolio-items > li {
+  display: inline-block;
+  vertical-align: top
+}
+
+.item {
+  width: 300px;
+  height: 202px;
+  margin: 150px 20px 0;
+  padding: 5px;
+  border-radius: 2px;
+  background-color: white;
+  font-size: 14px;
+  opacity: 0;
+  position: relative;
+  top: -300px;
+  box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.5);
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  -webkit-transition: all .3s ease, opacity 2s ease,  top 1s ease;
+  -o-transition: all .3s ease, opacity 2s ease,  top 1s ease;
+  transition: all .3s ease, opacity 2s ease,  top 1s ease
+}
+
+.item:nth-child(even) {
+  margin-top: 100px
+}
+
+.item:hover {
+  height: 270px;
+  padding: 15px;
+  -webkit-transform: translateY(-68px);
+  -ms-transform: translateY(-68px);
+  -o-transform: translateY(-68px);
+  transform: translateY(-68px)
+}
+
+.item:hover .date {
+  -webkit-transform: translate3d(0, 61px, 0);
+  -ms-transform: translate3d(0, 61px, 0);
+  -o-transform: translate3d(0, 61px, 0);
+  transform: translate3d(0, 61px, 0)
+}
+
+.item:hover figcaption {
+  -webkit-animation: show .25s ease-in .120s forwards;
+  -o-animation: show .25s ease-in .120s forwards;
+  animation: show .25s ease-in .120s forwards
+}
+
+.item:hover p:nth-of-type(1) span {
+  -webkit-animation: slideOut .25s ease-out .15s forwards;
+  -o-animation: slideOut .25s ease-out .15s forwards;
+  animation: slideOut .25s ease-out .15s forwards
+}
+
+.item:hover p:nth-of-type(2) span {
+  -webkit-animation: slideOut .2s  ease-out .3s forwards;
+  -o-animation: slideOut .2s  ease-out .3s forwards;
+  animation: slideOut .2s  ease-out .3s forwards
+}
+
+.item:hover .view {
+  height: 170px
+}
+
+.item:hover .view img {
+  top: -20px;
+  left: -20px;
+}
+
+.falldown {
+  top: 0;
+  opacity: 1;
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0);
+  transform: rotate(0)
+}
+
+figure {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*.view {
+  overflow: hidden;
+  width: 100%;
+  height: 190px;
+  position: relative
+}
+
+.view img {
+  width: 300px;
+  height: 190px;
+  -webkit-transition: width .3s ease;
+  -o-transition: width .3s ease;
+  transition: width .3s ease;
+  position: absolute;
+
+}*/
+
+figcaption {
+  height: 60px;
+  width: 100%;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  opacity: 0
+}
+
+figcaption p {
+  line-height: 25px !important;
+  font: bold 12px/18px "Arial", sans-serif;
+  text-transform: uppercase;
+  padding: 0 10px;
+  margin: 5px 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  color: #333
+}
+
+figcaption span {
+  left: -100%;
+  opacity: 0
+}
+
+figcaption a {
+  color: #CC320F
+}
+
+.date {
+  z-index: 1;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 1px;
+  background-color: #CC320F;
+  position: absolute;
+  bottom: 30px;
+  left: 15px;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.12, 1.6, 0.91, 0.92);
+  -o-transition: -o-transform 0.5s cubic-bezier(0.12, 1.6, 0.91, 0.92);
+  transition: -webkit-transform 0.5s cubic-bezier(0.12, 1.6, 0.91, 0.92);
+  transition: -ms-transform 0.5s cubic-bezier(0.12, 1.6, 0.91, 0.92);
+  transition: -o-transform 0.5s cubic-bezier(0.12, 1.6, 0.91, 0.92);
+  transition: transform 0.5s cubic-bezier(0.12, 1.6, 0.91, 0.92)
+}
+
+@keyframes slideOut {
+  0% {
+    left: -100%;
+    opacity: 0
+  }
+
+  95% {
+    left: 0;
+    opacity: 0.2
+  }
+
+  100% {
+    opacity: 1;
+    left: 0
+  }
+}
+
+@keyframes show {
+  to {
+    opacity: 1
+  }
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  cursor: pointer
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ddd;
+  border-radius: 10px
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #C4290D
+}
+
+@-webkit-keyframes slideOut {
+  0% {
+    left: -100%;
+    opacity: 0
+  }
+
+  95% {
+    left: 0;
+    opacity: 0.2
+  }
+
+  100% {
+    opacity: 1;
+    left: 0
+  }
+}
+
+@-o-keyframes slideOut {
+  0% {
+    left: -100%;
+    opacity: 0
+  }
+
+  95% {
+    left: 0;
+    opacity: 0.2
+  }
+
+  100% {
+    opacity: 1;
+    left: 0
+  }
+}
+
+@-webkit-keyframes show {
+  to {
+    opacity: 1
+  }
+}
+
+@-o-keyframes show {
+  to {
+    opacity: 1
+  }
+}
+
+.member {
+	background-color: #1565c0;
+}	
+
+.gov-btn {
+	width: 160px;
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<body>
+
+
+	
+<!--nav class="navbar  mb-4 fixed-top blue darken-3">
+
+ 
+  <a class="btn btn-md btn-outline-white" href="#"><span style="margin-bottom: 20px;">Sign-in</span></a>
+
+ 
+  <button class="navbar-toggler toggler-example transparent" type="button" data-toggle="collapse"
+    data-target="#navbarSupportedContent41" aria-controls="navbarSupportedContent41" aria-expanded="false"
+    aria-label="Toggle navigation"><span class="white-text"><i class="fas fa-bars fa-2x"></i></span></button>
+
+  
+  <div class="collapse navbar-collapse blue darken-2" id="navbarSupportedContent41">
+
+   
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+    </ul>
+    
+
+  </div>
+  
+
+</nav-->
+
+
+			<!--Carousel Wrapper-->
+  <div id="carousel-example-1" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-1" data-slide-to="1"></li>
+      <li data-target="#carousel-example-1" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item active">
+        <!--Mask-->
+        <div class="view">
+          <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
+            <ul class="animated fadeInUp col-md-12 list-unstyled list-inline">
+              <li>
+                <h1 class="font-weight-bold text-uppercase">MAULANA ABUL KALAM AZAD UNIVERSITY OF TECHNOLOGY</h1>
+              </li>
+              <li>
+                <h3 class="font-weight-bold text-uppercase py-4">ALUMNI ASSOCIATION</h3>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+        <!--/.Mask-->
+      </div>
+      <!--/.First slide-->
+
+      <!--Second slide -->
+      <div class="carousel-item">
+        <!--Mask-->
+        <div class="view">
+          <div class="full-bg-img flex-center mask rgba-purple-light white-text">
+            <ul class="animated fadeInUp col-md-12 list-unstyled">
+              <li>
+                <h1 class="font-weight-bold text-uppercase">MAULANA ABUL KALAM AZAD UNIVERSITY OF TECHNOLOGY</h1>
+              </li>
+              <li>
+                <h3 class="font-weight-bold text-uppercase py-4">ALUMNI ASSOCIATION</h3>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+        <!--/.Mask-->
+      </div>
+      <!--/.Second slide -->
+
+      <!--Third slide-->
+      <div class="carousel-item">
+        <!--Mask-->
+        <div class="view">
+          <div class="full-bg-img flex-center mask rgba-blue-light white-text">
+            <ul class="animated fadeInUp col-md-12 list-unstyled">
+              <li>
+                <h1 class="font-weight-bold text-uppercase">Visit our support forum</h1></li>
+              <li>
+                <p class="font-weight-bold text-uppercase py-4">Our community can help you with any question</p>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+        <!--/.Mask-->
+      </div>
+      <!--/.Third slide-->
+
+    </div>
+    <!--/.Slides-->
+
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-1" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-1" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+    <img src="wave.svg" class="wave">
+  </div>
+  <!--/.Carousel Wrapper-->
+
+
+  	<section class="px-md-5 mx-md-5  text-center" style="margin-bottom: 50px;">
+
+      <!--Grid row-->
+      <div class="row d-flex justify-content-center">
+
+        <!--Grid column-->
+        <div class="col-lg-8">
+
+          <!--Grid row-->
+          <div class="row">
+
+            <!--First column-->
+            <div class="col-md-3 col-6 mb-4">
+              <i class="fas fa-user-graduate fa-3x blue-text"></i>
+            </div>
+            <!--/First column-->
+
+            <!--Second column-->
+            <div class="col-md-3 col-6 mb-4">
+              <i class="fas fa-book fa-3x teal-text"></i>
+            </div>
+            <!--/Second column-->
+
+            <!--Third column-->
+            <div class="col-md-3 col-6 mb-4">
+              <i class="fas fa-cogs fa-3x indigo-text"></i>
+            </div>
+            <!--/Third column-->
+
+            <!--Fourth column-->
+            <div class="col-md-3 col-6 mb-4">
+              <i class="fas fa-suitcase fa-3x deep-purple-text"></i>
+            </div>
+            <!--/Fourth column-->
+
+          </div>
+          <!--/Grid row-->
+
+          
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+
+    </section>
+    <!--Section: Content-->
+
+	<div class="blob">
+		<div class="row">
+
+			<div class="col-md-4">
+				<h1 class="alumni-story text-dark text-center font-weight-bold">
+				  		Alumni Story
+				  	</h1>
+				  	<!--div class="blob">
+					  	<svg class="blob1" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 350">
+					  <path d="M156.4,339.5c31.8-2.5,59.4-26.8,80.2-48.5c28.3-29.5,40.5-47,56.1-85.1c14-34.3,20.7-75.6,2.3-111  c-18.1-34.8-55.7-58-90.4-72.3c-11.7-4.8-24.1-8.8-36.8-11.5l-0.9-0.9l-0.6,0.6c-27.7-5.8-56.6-6-82.4,3c-38.8,13.6-64,48.8-66.8,90.3c-3,43.9,17.8,88.3,33.7,128.8c5.3,13.5,10.4,27.1,14.9,40.9C77.5,309.9,111,343,156.4,339.5z"/>
+					  </svg>
+				  	</div-->
+			</div>
+			<div class="col-md-8">
+				<div class="story" style="">
+					<p class="text-dark justify-content-center">Maulana Abul Kalam Azad University of Technology(formally known as West Bengal University of Technology) is proud to have as its alumni a group of engineers, technologists, scientists. Now, we are giving a platform to all to share their experience with each other. The students along with the help of the university, in its endeavour to strengthen the link with the alumni, has set an Alumni Association consisting of a dedicated team of members. The Alumni Office was assisted by the TEQIP and university grant. The Alumni Association has been created at the University which extends several facilities and services to the Alumni to continue and enhance their pleasant association with the university which will be shared ahead.</p>
+				</div>
+			</div>
+		</div>
+
+		<img src="mywave1.svg" class="wave1">
+	</div>
+	
+
+	<div class="text-center content" style="">
+
+      <!--Grid row-->
+      <div class="row d-flex justify-content-center">
+
+        <!--Grid column-->
+        <div class="col-lg-6">
+        	<h1 class="text-center text-dark font-weight-bold">CONTACT US</h1>
+          	<p class="text-dark text-center">In case of any problem with the website Please do mail us at<br/>
+			makautwb.alumni@gmail.com</p>
+			<a  class="text-center" href="https://www.facebook.com/groups/548822608594152/" target="_blank" style="text-decoration: none;">CONTACT US AT FB</a>
+			<div class="row">
+
+	      <!-- Grid column -->
+	      <div class="col-md-12">
+	        <div class="mb-5 flex-center">
+
+	          <!-- Facebook -->
+	          <a class="fb-ic">
+	            <i class="fab fa-facebook-f fa-lg indigo-text mr-md-5 mr-3 fa-2x"> </i>
+	          </a>
+	          <!-- Twitter -->
+	          <a class="tw-ic">
+	            <i class="fab fa-twitter fa-lg aqua-text mr-md-5 mr-3 fa-2x"> </i>
+	          </a>
+	          <!-- Google +-->
+	          <a class="gplus-ic">
+	            <i class="fab fa-google-plus-g fa-lg red-text mr-md-5 mr-3 fa-2x"> </i>
+	          </a>
+	          <!--Linkedin -->
+	          <a class="li-ic">
+	            <i class="fab fa-linkedin-in fa-lg blue-text mr-md-5 mr-3 fa-2x"> </i>
+	          </a>
+	          <!--Instagram-->
+	          <a class="ins-ic">
+	            <i class="fab fa-instagram fa-lg pink-text mr-md-5 mr-3 fa-2x"> </i>
+	          </a>
+	          <!--Pinterest-->
+	          <a class="pin-ic">
+	            <i class="fab fa-github fa-lg black-text fa-2x"> </i>
+	          </a>
+	        </div>
+	      </div>
+	      <!-- Grid column -->
+
+    </div>
+
+			<h3 class="text-center text-dark">MAKAUT FORUM CLICK DOWN</h3>
+			<a href="forum.php" style="background-color:#2962ff"; class="btn waves-light waves-effect"> FORUM </a>
+          
+        </div>
+        <!--Grid column-->
+        <div class="col-lg-6">
+                        
+                      
+			             <center><h3>News Feeds</h3></center>
+			          	<ul class="collapsible popout" data-collapsible="accordion">
+		                <li>
+		                  <div class="collapsible-header active"><i class="far fa-newspaper"></i>NEWS FEEDS</div>
+		                  <div class="collapsible-body"><p><strong>PLEASE WAIT FOR 24 HOURS FOR YOUR ACCOUNT TO ACTIVATE.</strong></p></div>
+		                </li>
+		                <li>
+		                  <div class="collapsible-header"><i class="far fa-newspaper"></i>NEWS FEEDS</div>
+		                  <div class="collapsible-body"><p>CHAT FORUM COMING SOON.....</p></div>
+		                </li>
+		                <li>
+		                  <div class="collapsible-header"><i class="far fa-newspaper"></i>NEWS FEEDS</div>
+		                  <div class="collapsible-body"><p>PLEASE UPDATE YOUR ACCOUNT , IN CASE OF QUERY MAIL US AT-<strong> wbutreunion@gmail.com</strong></p></div>
+		                </li>
+		            </ul>
+        
+       				
+        </div>  
+                       
+
+                        
+                        
+                   
+        	
+        </div>
+        
+        
+        <img src="svgwave.svg" alt="wave">
+      </div>
+      <!--Grid row-->
+      
+
+   
+    <!--Section: Content-->
+	
+    <div class="member">
+    	<div class="row d-flex">
+    		<div class="col-md-6 text-center">
+    			<i class="fas fa-crown fa-9x deep-orange-text crown" style="transform: translate(-130px,80px);  "></i>
+    			<h1 class="text-center mem-text text-white" style="z-index: 1; position: relative;">MEMBERS</h1>
+    		</div>
+    	</div>
+    	
+    	<div class="row">
+    		<div class=" col-md-12">
+    				<div class="demo-wrapper">
+  
+				  <!-- <h1>Horizontal Portfolio Layout With CSS3 Animations and jQuery</h1> -->
+
+				    <ul class="portfolio-items">
+				    <li class="item">
+				      <figure>
+				        <div class="view">
+				         <img src="https://s.cdpn.io/9674/1.jpg" />
+				        </div>
+				        <figcaption>
+				          <p><span><a href="http://www.vladstudio.com/wallpaper/?thetwoandthebubbles">The Two and The Bubbles</a></span></p>
+				          <p><span>By Vlad Gerasimov</span></p>
+				        </figcaption>
+				      </figure>
+				      <div class="date">2005</div>
+				    </li>
+				    
+				    <li class="item">
+				      <figure>
+				        <div class="view">
+				          <img src="https://s.cdpn.io/9674/2.jpg" />
+				        </div>
+				        <figcaption>
+				          <p><span><a href="http://www.vladstudio.com/wallpaper/?christmas_ice_skating">Christmas Ice Skating</a></span></p>
+				          <p><span>By Vlad Gerasimov</span></p>
+				        </figcaption>
+				      </figure>
+				      <div class="date">2008</div>
+				    </li>
+
+				    <li class="item">
+				      <figure>
+				        <div class="view">
+				          <img src="https://s.cdpn.io/9674/3.jpg" />
+				        </div>
+				        <figcaption>
+				          <p><span><a href="http://www.vladstudio.com/wallpaper/?love_knows_no_boundaries">Love Knows No Boundaries</a></span></p>
+				          <p><span>By Vlad Gerasimov</span></p>
+				        </figcaption>
+				      </figure>
+				      <div class="date">2008</div>
+				    </li>
+				   
+				    <li class="item">
+				      <figure>
+				        <div class="view">
+				          <img src="https://s.cdpn.io/9674/7.jpg" />
+				        </div>
+				        <figcaption>
+				          <p><span><a href="http://www.vladstudio.com/wallpaper/?sandal">Sandal</a></span></p>
+				          <p><span>By Vlad Gerasimov </span></p>
+				        </figcaption>
+				      </figure>
+				      <div class="date">2009</div>
+				    </li>
+				    
+				    <li class="item">
+				      <figure>
+				        <div class="view">
+				          <img src="https://s.cdpn.io/9674/13.jpg" />
+				        </div>
+				        <figcaption>
+				          <p><span><a href="http://www.vladstudio.com/wallpaper/?skiing">Skiing</a></span></p>
+				          <p><span>By Vlad Gerasimov</span></p>
+				        </figcaption>
+				      </figure>
+				      <div class="date">2004</div>
+				    </li>
+				    
+				    <li class="item">
+				      <figure>
+				        <div class="view">
+				          <img src="https://s.cdpn.io/9674/33.jpg" />
+				        </div>
+				        <figcaption>
+				          <p><span><a href="http://www.vladstudio.com/wallpaper/?knight_lady">The Knight and The Lady</a></span></p>
+				          <p><span>By Vlad Gerasimov</span></p>
+				        </figcaption>
+				      </figure>
+				      <div class="date">2009</div>
+				    </li>
+
+				    <li class="item">
+				      <figure>
+				        <div class="view">
+				         <img src="https://s.cdpn.io/9674/11.jpg" />
+				        </div>
+				        <figcaption>
+				          <p><span><a href="http://www.vladstudio.com/wallpaper/?friends_c2">Friends</a></span></p>
+				          <p><span>By Vlad Gerasimov</span></p>
+				        </figcaption>
+				      </figure>
+				      <div class="date">2008</div>
+				    </li>
+
+				    
+
+				  </ul>
+				  </div>
+
+				  <div class="text-right">
+				  	<a href=""><h5 class="text-white">READ MORE <i class="fas fa-angle-double-right"></i></h5></a>
+				  </div>
+				  
+
+
+    		</div>	
+    	</div>
+    	
+    </div>
+
+
+    <div class="archive">
+    	<div class="row">
+    		<div class="col-lg-6 text-center">
+    			<h1>ARCHIVES</h1>
+    		</div>
+    	</div>
+    	<div class="row">
+    		<div class="col-md-8 text-center">
+    					
+    			
+				<div id="wowslider-container1" class="text-center">
+				<div class="ws_images"><ul>
+						<li><img src="data1/images/wbut.jpg" alt="wbut" title="wbut" id="wows1_0"/></li>
+						<li><img src="data1/images/3.jpeg" alt="html5 slideshow" title="2" id="wows1_1"/></li>
+						<li><img src="data1/images/4.jpeg" alt="1" title="1" id="wows1_2"/></li>
+					</ul></div>
+					<div class="ws_bullets"><div>
+						<a href="#" title="wbut"><span><img src="data1/tooltips/wbut.jpg" alt="wbut"/>1</span></a>
+						<a href="#" title="2"><span><img src="data1/tooltips/2.jpg" alt="2"/>2</span></a>
+						<a href="#" title="1"><span><img src="data1/tooltips/1.jpg" alt="1"/>3</span></a>
+					</div></div>
+				<div class="ws_shadow"></div>
+				</div>	
+				
+
+    		</div>
+    		
+    	</div>
+    	<img src="footerwave.svg">
+    	
+    </div>
+
+
+
+    <!-- Footer -->
+<footer class="page-footer font-small blue darken-3 pt-4" style="margin-top: 0px;">
+
+  <!-- Footer Text -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h4 class="text-uppercase font-weight-bold text-center">Governing Body</h4>
+        <hr class="my-10">
+        <div class="row">
+        	<div class="col-sm-4">
+        		<a href="" class="btn btn-md light-blue lighten-5 text-dark font-weight-bold gov-btn" style="padding-bottom: 40px; border-radius: 20px;">Dr.A Karmakar</a>
+        	</div>
+        	<div class="col-sm-4">
+        		<a href="" class="btn btn-md light-blue lighten-5 text-dark font-weight-bold gov-btn" style="padding-bottom: 40px; border-radius: 20px;">Prabhu N. Rai</a>
+        		
+        	</div>
+        	<div class="col-sm-4">
+        		<a href="" class="btn btn-md light-blue lighten-5 text-dark font-weight-bold gov-btn" style="padding-bottom: 40px; border-radius: 20px;">Joy Samadder</a>
+        		
+        	</div>
+        	
+        </div>
+        <div class="row">
+        	<div class="col-sm-4">
+        		<a href="" class="btn btn-md light-blue lighten-5 text-dark font-weight-bold gov-btn" style="padding-bottom: 40px; border-radius: 20px;">S.Chatterjee</a>
+        		
+        	</div>
+        	<div class="col-sm-4">
+        		<a href="" class="btn btn-md light-blue lighten-5 text-dark font-weight-bold gov-btn" style="padding-bottom: 40px; border-radius: 20px;">Anil Prasad</a>
+        		
+        	</div>
+        	<div class="col-sm-4">
+        		<a href="" class="btn btn-md light-blue lighten-5 text-dark font-weight-bold gov-btn" style="padding-bottom: 40px; border-radius: 20px;">Pritimoy Sanyal</a>
+        		
+        	</div>
+        	
+        </div>
+        <div class="row">
+        	<div class="col-sm-4">
+        		<a href="" class="btn btn-md light-blue lighten-5 text-dark font-weight-bold gov-btn" style="padding-bottom: 40px; border-radius: 20px;">Chumki Das</a>
+        		
+        	</div>
+        	<div class="col-sm-4">
+        		<a href="" class="btn btn-md light-blue lighten-5 text-dark font-weight-bold gov-btn" style="padding-bottom: 40px; border-radius: 20px;">Shubhashis.S</a>
+        		
+        	</div>
+        	<div class="col-sm-4">
+        		<a href="" class="btn btn-md light-blue lighten-5 text-dark font-weight-bold gov-btn" style="padding-bottom: 40px; border-radius: 20px;">Rupali Patua</a>
+        		
+        	</div>
+        	
+        </div>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mb-md-0 mb-3">
+
+        <!-- Content -->
+        <h4 class="text-uppercase font-weight-bold text-center">Technical Team</h4>
+        <hr class="my-10">
+        <h5 class="text-center">Aqueef Alim Ansari | B.tech | Cse 2nd Year</h5>
+        <h5 class="text-center">Preasanna Thapa | B.tech | Cse 2nd Year</h5>
+        <h5 class="text-center">Shailesh Yogendra | B.tech | Cse 2nd Year</h5>
+
+        <a class="my-5"><h5 class="text-center my-5">Know More <i class="fas fa-angle-double-right"></i></h5></a>
+
+
+
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <hr class="my-10">
+    <!-- Grid row -->
+     <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 flex-center">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Pinterest-->
+          <a class="pin-ic">
+            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+
+  </div>
+  <!-- Footer Text -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="padding-bottom: 40px;">© 2020 Copyright:
+    <a href=""> MakautAlumni</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+
+
+
+
+
+
+  
+		<script type="text/javascript">
+			//checks if element it is called on is visible (only checks horizontally
+(function($) {
+  var $window = $(window);
+  
+  $.fn.isVisible = function(){
+    var $this = $(this),
+      Left = $this.offset().left,
+      visibleWidth = $window .width();
+
+    return Left < visibleWidth;  
+  }
+})(jQuery);
+
+(function($){
+  var list = $('.portfolio-items'),
+      showVisibleItems = function(){
+      list.children('.item:not(.falldown)').each(function(el, i){
+          var $this = $(this);
+          if($this.isVisible()){
+            $this.addClass('falldown');
+          }
+        });
+      };
+  
+  //initially show all visible items before any scroll starts
+  showVisibleItems();
+  
+  //then on scroll check for visible items and show them
+  list.scroll(function(){
+    showVisibleItems();
+  });
+  
+  //image hover pan effect
+  list.on('mousemove','img', function(ev){
+      var $this = $(this),
+          posX = ev.pageX, 
+          posY = ev.pageY,
+          data = $this.data('cache');
+    //cache necessary variables
+        if(!data){
+          data = {};
+          data.marginTop = - parseInt($this.css('top')),
+          data.marginLeft = - parseInt($this.css('left')),
+          data.parent = $this.parent('.view'),
+          $this.data('cache', data); 
+        }
+
+    var originX = data.parent.offset().left,
+        originY =  data.parent.offset().top;
+    
+       //move image
+       $this.css({
+          'left': -( posX - originX ) / data.marginLeft,
+          'top' : -( posY - originY ) / data.marginTop
+       }); 
+  });
+  
+  
+  list.on('mouseleave','.item', function(e){
+    $(this).find('img').css({
+      'left': '0', 
+      'top' : '0'
+    });
+  });
+  
+  list.mousewheel(function(event, delta) {
+
+      this.scrollLeft -= (delta * 60);
+    
+      event.preventDefault();
+
+   });
+})(jQuery);
+/*
+Thanks a lot Fabrice Weinberg for helping me organize and oprimize the  JS code :)
+
+
+Copyright © 2013 Sara Soueidan
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+*/
+ 
+
+
+
+
+
+
+
+
+
+		</script>
+	
+
+
+
+
+	<!-- JQuery -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/js/mdb.min.js"></script>
+</body>
+</html>
